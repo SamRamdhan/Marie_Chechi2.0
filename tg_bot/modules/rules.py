@@ -94,11 +94,11 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- - /rules: ഈ ചാറ്റിനായുള്ള നിയമങ്ങൾ നേടുക.
+ - /rules: untuk melihat peraturan grup
 
 *Admin only:*
- - /setrules <your rules here>:  ഈ ചാറ്റിനായി നിയമങ്ങൾ സജ്ജമാക്കുക.
- - /clearrules: ഈ ചാറ്റിനായുള്ള നിയമങ്ങൾ‌ മായ്‌ക്കുക.
+ - /setrules <your rules here>: untuk mengatur peraturan grup.
+ - /clearrules: untuk menghapus peraturan grup.
 """
 
 __mod_name__ = "Rules"
