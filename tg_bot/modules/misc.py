@@ -224,17 +224,17 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
 
-    text = "<b>User info</b>:" \
+    text = "<b>Info Pengguna</b>:" \
            "\nID: <code>{}</code>" \
-           "\nFirst Name: {}".format(user.id, html.escape(user.first_name))
+           "\nNama Depan: {}".format(user.id, html.escape(user.first_name))
 
     if user.last_name:
-        text += "\nLast Name: {}".format(html.escape(user.last_name))
+        text += "\nNama Belakang: {}".format(html.escape(user.last_name))
 
     if user.username:
         text += "\nUsername: @{}".format(html.escape(user.username))
 
-    text += "\nPermanent user link: {}".format(mention_html(user.id, "link"))
+    text += "\nLink akun: {}".format(mention_html(user.id, "link"))
 
     if user.id == OWNER_ID:
         text += "\n\nഈ കള്ള കുരുപ്പ് ആണെന്റെ മൊയലാളി.... ഇവനെ എനിക്ക് ഒന്നും ചെയ്യാൻ പറ്റൂല്ല.... 😔!"
